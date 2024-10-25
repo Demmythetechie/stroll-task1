@@ -17,7 +17,7 @@ function App() {
     console.log('works');
 
     (async function () {
-      await axios.post('https://stroll-backend-naheem-okunades-projects.vercel.app/user', {'region': region, 'question': question})
+      await axios.post('https://stroll-backend-naheem-okunades-projects.vercel.app/api/user', {'region': region, 'question': question})
       .then(function (response) {
           console.log('works');
           console.log(response);
